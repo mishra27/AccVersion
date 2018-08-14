@@ -1051,7 +1051,7 @@ public class Camera2VideoImageActivity extends AppCompatActivity implements Sens
 
     private void createVideoFolder() {
         File movieFile = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MOVIES);
-        mVideoFolder = new File(movieFile, "camera2VideoImage");
+        mVideoFolder = new File(movieFile, "Videos");
         if(!mVideoFolder.exists()) {
             mVideoFolder.mkdirs();
         }
@@ -1369,7 +1369,8 @@ public class Camera2VideoImageActivity extends AppCompatActivity implements Sens
         Double xD =  disXfilter.get(disXfilter.size()-1);
         Double yD = disYfilter.get(disYfilter.size()-1);
       //  textView = (TextView) findViewById(R.id.textView);
-        float answer = (float)((2*disXfilter.get(maxi-1) )) ;
+      //camer  float answer = (float)((2*disXfilter.get(maxi-1) )) ;
+      //camer  float answer = (float)((2*disXfilter.get(maxi-1) )) ;
 
         // Double answer = Math.sqrt((xD*xD)+(yD*yD));
 
