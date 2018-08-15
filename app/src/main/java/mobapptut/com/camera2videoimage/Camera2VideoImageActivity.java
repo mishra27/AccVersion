@@ -402,14 +402,14 @@ public class Camera2VideoImageActivity extends AppCompatActivity implements Sens
                     for(int mk = 1; mk < accX.size(); mk++) {
                         Log.d("dd", "AccX: " + (accX.get(mk)) + " Time " + timeDiff.get(mk) + " Index " + mk );
                         sumT = sumT + timeDiff.get(mk);
-                        writer.println(accX.get(mk) + "," + sumT);
+                       // writer.println(accX.get(mk) + "," + sumT);
                     }
 
                     Log.d("dd", "toatl Time: " + sumT);
                     Intent mediaStoreUpdateIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
                     mediaStoreUpdateIntent.setData(Uri.fromFile(new File(mVideoFileName)));
                     sendBroadcast(mediaStoreUpdateIntent);
-                    writer.close();
+                   // writer.close();
 
                     double K =0;
 
